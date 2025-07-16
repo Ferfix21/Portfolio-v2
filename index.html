@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio showcasing my projects and skills.">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Updated header using Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark font-1">
+      <div class="container">
+        <a class="navbar-brand" href="#">Fernando Alfaye</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Agrega una nueva sección de héroe -->
+    <section class=" container-fluid text-center text-black bg-light ">
+      <div class="container-fluid">
+        <h1 class="display-2">Bienvenido a mi Portfolio</h1>
+        <p class="lead">Descubre mis proyectos y habilidades</p>
+        <a class="btn btn-primary btn-lg" href="#projects">Ver Proyectos</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5" data-aos="flip-left">
+      <div class="container">
+        <h1 class="text-center">About Me</h1>
+        <p class="lead text-center">Hello! I'm a passionate developer with experience in building modern web applications. I love solving problems and creating user-friendly designs.</p>
+      </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="py-5" data-aos="fade-right">
+      <div class="container">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4" data-aos="zoom-in">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Project 1</h3>
+                <p class="card-text">Description of the project.</p>
+                <a href="#" class="btn btn-primary" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Project 2</h3>
+                <p class="card-text">Description of the project.</p>
+                <a href="#" class="btn btn-primary" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-5" data-aos="fade-left">
+      <div class="container">
+        <h2 class="text-center mb-4">Contact</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form action="https://formspree.io/f/your-form-id" method="POST" data-aos="flip-up">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <p class="mb-0">&copy; 2023 Your Name. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>AOS.init()</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
